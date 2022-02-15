@@ -5,15 +5,16 @@
   "main": "index.js",
   "scripts": {
     "start": "node src/kafka.js",
-    "dev": "nodemon src/kafka.js"
+    "dev": "tsnd --transpile-only --ignore-watch node_modules src/index.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "express": "^4.17.2",
+    "@types/pg": "^8.6.4",
     "mongoose": "^6.2.1",
-    "nodemon": "^2.0.15"
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.5.5"
   },
   "dependencies": {
     "kafkajs": "^1.16.0",
